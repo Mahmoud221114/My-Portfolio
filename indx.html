@@ -27,6 +27,7 @@
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
         <!-- js kit -->
         <script src="https://kit.fontawesome.com/4bf48f78b4.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 
     <body>
@@ -150,13 +151,13 @@
         </section>
 
         <!-- About -->
-        <section class="about section" id="about">
+        <section class="about section"  id="about">
             <h2 class="section_title">About Me</h2>
             <span class="section_subtitle">My introduction</span>
             <div class="about_container container grid">
-                <img src="img/about.png.jpg" alt="" class="about_img" data-tilt />
+                <img data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine" src="img/about.png.jpg" alt="" class="about_img" data-tilt />
                 <div class="about_data">
-                    <p class="about_description">
+                    <p class="about_description" data-aos="fade-left">
                         Hello! 👋 I am Mahmoud, 20 years old, learning in the field of information technology,
                         especially front-end development. I am passionate about self-learning, passionate about
                         open source, exploring and building projects👨 💻 using different techniques. I'm a front-end
@@ -174,11 +175,14 @@
 
         <!-- Skills -->
         <section class="skills section" id="skills">
-            <h1 class="section_title">Skills</h1>
+            <h1 class="section_title" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">Skills</h1>
             <span class="section_subtitle">My Technical Skills</span>
             <div class="skills_container container grid">
                 <!-- Skill Set 1 -->
-                <div class="skill skills_content skills_open">
+                <div class="skill skills_content skills_open" data-aos="fade-right">
                     <div class="skills_header">
                         <i class="uil uil-arrow skills_icon"></i>
                         <div>
@@ -233,7 +237,7 @@
                 </div>
 
                 <!-- Skill Set 2 -->
-                <div class="skill skills_content">
+                <div class="skill skills_content" data-aos="fade-left">
                     <div class="skills_header">
                         <i class="uil uil-brackets-curly skills_icon"></i>
 
@@ -300,7 +304,7 @@
                 </div>
 
                 <!-- Skill Set 3 -->
-                <div class="skill skills_content">
+                <div class="skill skills_content" data-aos="fade-right">
                     <div class="skills_header">
                         <i class="uil uil-wrench skills_icon"></i>
 
@@ -357,10 +361,10 @@
 
         <!-- Qualifications -->
         <section class="qualification section" id="qualification">
-            <h2 class="section_title">Qualifications</h2>
-            <span class="section_subtitle">My Educational Qualification & Work Experience</span>
+            <h2 class="section_title" data-aos="zoom-in">Qualifications</h2>
+            <span class="section_subtitle" data-aos="zoom-in">My Educational Qualification & Work Experience</span>
 
-            <div class="qualification_container container">
+            <div class="qualification_container container" data-aos="zoom-in">
                 <div class="qualification_tabs">
                     <div class="qualification_button button-flex" id="educationheader">
                         <i class="uil uil-graduation-cap qualification_icon"></i>Education
@@ -430,47 +434,117 @@
                 <!-- Work Experience -->
                 <div class="qualification_content qualification-inactive" data-content id="work">
                     <!-- SWoC -->
-                    <div class="qualification_data">
-                    <div>
-                        <h3 class="qualification_title">Student Mentor</h3>
-                        <span class="qualification_subtitle">Script Winter of Code</span>
-                        <div class="qualification_calendar">
-                        <i class="uil uil-calendar-alt"></i>
-                        November 2021 - Present
+                    <div class="qualification_content qualification_active" data-content id="education">
+                        <!-- BTech IT -->
+                        <div class="qualification_data">
+                        <div>
+                            <h3 class="qualification_title">Weather App</h3>
+                            <span class="qualification_subtitle">Weather App</span>
+                            <div class="qualification_calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2023
+                            </div>
                         </div>
-                    </div>
-
-                    <div>
-                        <span class="qualification_circle"></span>
-                        <span class="qualification_line"></span>
-                    </div>
-                    </div>
-
-                    <!-- TSF -->
-                    <div class="qualification_data">
-                    <div></div>
-
-                    <div>
-                        <span class="qualification_circle"></span>
-                        <!-- <span class="qualification_line"></span> -->
-                    </div>
-
-                    <div>
-                        <h3 class="qualification_title">system crud</h3>
-                        <span class="qualification_subtitle"></span>
-                        <div class="qualification_calendar">
-                        <i class="uil uil-calendar-alt"></i>
-                        May 2021 - June 2021
+    
+                        <div>
+                            <span class="qualification_circle"></span>
+                            <span class="qualification_line"></span>
                         </div>
+                        </div>
+    
+                        <!-- School 11-12 -->
+                        <div class="qualification_data">
+                        <div></div>
+    
+                        <div>
+                            <span class="qualification_circle"></span>
+                            <span class="qualification_line"></span>
+                        </div>
+    
+                        <div>
+                            <h3 class="qualification_title">GYM Website</h3>
+                            <span class="qualification_subtitle">GYM Website</span>
+                            <div class="qualification_calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2023
+                            </div>
+                        </div>
+                        </div>
+    
+                        <!-- School 1-10 -->
+                        <div class="qualification_data">
+                        <div>
+                            <h3 class="qualification_title">Travel</h3>
+                            <span class="qualification_subtitle">travel</span>
+                            <div class="qualification_calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            20022
+                            </div>
+                        </div>
+                        <div>
+                            <span class="qualification_circle"></span>
+                        </div>
+                        </div>
+    
                     </div>
+                    <div class="qualification_content qualification_active" data-content id="education">
+                        <!-- BTech IT -->
+                        <div class="qualification_data">
+                        <div>
+                            <h3 class="qualification_title">Food Website</h3>
+                            <span class="qualification_subtitle">Food</span>
+                            <div class="qualification_calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2022
+                            </div>
+                        </div>
+    
+                        <div>
+                            <span class="qualification_circle"></span>
+                            <span class="qualification_line"></span>
+                        </div>
+                        </div>
+    
+                        <!-- School 11-12 -->
+                        <div class="qualification_data">
+                        <div></div>
+    
+                        <div>
+                            <span class="qualification_circle"></span>
+                            <span class="qualification_line"></span>
+                        </div>
+    
+                        <div>
+                            <h3 class="qualification_title">Netflix </h3>
+                            <span class="qualification_subtitle">Netflix </span>
+                            <div class="qualification_calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2022
+                            </div>
+                        </div>
+                        </div>
+    
+                        <!-- School 1-10 -->
+                        <div class="qualification_data">
+                        <div>
+                            <h3 class="qualification_title">Kasper</h3>
+                            <span class="qualification_subtitle">Kasper</span>
+                            <div class="qualification_calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2022
+                            </div>
+                        </div>
+                        <div>
+                            <span class="qualification_circle"></span>
+                        </div>
+                        </div>
+    
                     </div>
-
-                </div>
             </div>
         </section>
 
         <!-- Portfolio -->
-        <section class="portfolio section" id="projects">
+        <section class="portfolio section" data-aos="zoom-in-right" id="projects">
         <h2 class="section_title">Projects</h2>
         <span class="section_subtitle">Most recent work</span>
 
@@ -706,13 +780,15 @@
     <!-- Swiper JS -->
     <script src="js/swiper-bundle.min.js"></script>
 
-    <!-- Typed JS -->
-    <script src="js/typed.js"></script>
 
     <!-- Tilt JS  -->
     <script src="js/tilt.jquery.min.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     </body>
 
 </html>
